@@ -10,8 +10,8 @@ FLOATING_TYPES: List[str] = ["notification", "toolbar", "splash", "dialog"]
 
 def build_bsp_layout(colors: ColorScheme, measurements: MeasurementsConfig, behaviour: LayoutBehavior) -> Layout:
     return layout.Bsp(
-        border_focus=colors.green,
-        border_normal=colors.gray,
+        border_focus=colors.magenta,
+        border_normal=colors.green,
         border_width=measurements.border_width,
         margin=measurements.margin,
         ratio=behaviour.aspect_ratio,
@@ -24,8 +24,8 @@ def build_bsp_layout(colors: ColorScheme, measurements: MeasurementsConfig, beha
 
 def build_spiral_layout(colors: ColorScheme, measurements: MeasurementsConfig, behaviour: LayoutBehavior) -> Layout:
     return layout.Spiral(
-        border_focus=colors.green,
-        border_normal=colors.gray,
+        border_focus=colors.magenta,
+        border_normal=colors.green,
         border_width=measurements.border_width,
         margin=measurements.margin,
         ratio=behaviour.windows_ratio,
@@ -35,8 +35,8 @@ def build_spiral_layout(colors: ColorScheme, measurements: MeasurementsConfig, b
 
 def build_ratio_layout(colors: ColorScheme, measurements: MeasurementsConfig, behaviour: LayoutBehavior) -> Layout:
     return layout.RatioTile(
-        border_focus=colors.green,
-        border_normal=colors.gray,
+        border_focus=colors.magenta,
+        border_normal=colors.green,
         border_width=measurements.border_width,
         margin=measurements.margin,
         ratio=behaviour.aspect_ratio,
@@ -46,8 +46,8 @@ def build_ratio_layout(colors: ColorScheme, measurements: MeasurementsConfig, be
 
 def build_floating_layout(colors: ColorScheme, measurements: MeasurementsConfig, behaviour: LayoutBehavior) -> Layout:
     return layout.Floating(
-        border_focus=colors.green,
-        border_normal=colors.gray,
+        border_focus=colors.magenta,
+        border_normal=colors.green,
         border_width=measurements.border_width,
         margin=measurements.margin,
         fullscreen_border_width=measurements.border_width,
@@ -56,8 +56,8 @@ def build_floating_layout(colors: ColorScheme, measurements: MeasurementsConfig,
 
 def build_monadtall_layout(colors: ColorScheme, measurements: MeasurementsConfig, behaviour: LayoutBehavior) -> Layout:
     return layout.MonadTall(
-        border_focus=colors.green,
-        border_normal=colors.gray,
+        border_focus=colors.magenta,
+        border_normal=colors.green,
         border_width=measurements.border_width,
         margin=measurements.margin,
         ratio=behaviour.windows_ratio,
@@ -69,8 +69,8 @@ def build_monadtall_layout(colors: ColorScheme, measurements: MeasurementsConfig
 
 def build_monadwide_layout(colors: ColorScheme, measurements: MeasurementsConfig, behaviour: LayoutBehavior) -> Layout:
     return layout.MonadWide(
-        border_focus=colors.green,
-        border_normal=colors.gray,
+        border_focus=colors.magenta,
+        border_normal=colors.green,
         border_width=measurements.border_width,
         margin=measurements.margin,
         ratio=behaviour.windows_ratio,
@@ -82,8 +82,8 @@ def build_monadwide_layout(colors: ColorScheme, measurements: MeasurementsConfig
 
 def build_monad3col_layout(colors: ColorScheme, measurements: MeasurementsConfig, behaviour: LayoutBehavior) -> Layout:
     return layout.MonadThreeCol(
-        border_focus=colors.green,
-        border_normal=colors.gray,
+        border_focus=colors.magenta,
+        border_normal=colors.green,
         border_width=measurements.border_width,
         margin=measurements.margin,
         ratio=behaviour.windows_ratio,
@@ -95,8 +95,8 @@ def build_monad3col_layout(colors: ColorScheme, measurements: MeasurementsConfig
 
 def build_matrix_layout(colors: ColorScheme, measurements: MeasurementsConfig, behaviour: LayoutBehavior) -> Layout:
     return layout.Matrix(
-        border_focus=colors.green,
-        border_normal=colors.gray,
+        border_focus=colors.magenta,
+        border_normal=colors.green,
         border_width=measurements.border_width,
         margin=measurements.margin,
     )
