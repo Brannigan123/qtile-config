@@ -14,6 +14,7 @@ def decode_monitor_info(line: str):
 
 
 def get_monitors():
-    cmd = 'xrandr --listmonitors | grep "*"'
+    cmd = 'xrandr --listmonitors |  grep "^[ 0-9]"'
     ps = Popen(cmd, shell=True, stdout=PIPE, stderr=STDOUT)
     return [decode_monitor_info(line.decode("utf-8")) for line in ps.communicate()[0].splitlines()]
+    
